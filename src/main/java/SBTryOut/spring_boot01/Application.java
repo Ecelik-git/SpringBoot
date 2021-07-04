@@ -14,13 +14,13 @@ public class Application {
 				SpringApplication.run(Application.class, args);
 		
 		Laptop l1 = con.getBean(Laptop.class);
+		BatteryA bA = con.getBean(BatteryA.class);
 		l1.use();
+		
 		Laptop l2 = con.getBean(Laptop.class);
+		BatteryB bB = con.getBean(BatteryB.class);
 		l2.use();
-		Laptop l3 = con.getBean(Laptop.class);
-		l3.use();
-		
-		
+	
 		con.close();
 	}
 
